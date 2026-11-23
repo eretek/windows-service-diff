@@ -1,0 +1,30 @@
+{
+ "tests": [
+  {
+   "in": {
+    "a": "Name,Status,StartType\nX,Running,Automatic",
+    "b": "Name,Status,StartType\nx,Stopped,Automatic"
+   },
+   "v": {
+    "chg": 1
+   }
+  },
+  {
+   "in": {
+    "a": "Name,Status\nX,Running",
+    "b": "Name,Status\nY,Running"
+   },
+   "v": {
+    "onlyA": 1,
+    "onlyB": 1
+   }
+  },
+  {
+   "in": {
+    "a": "Status\nRunning",
+    "b": "Name\nX"
+   },
+   "err": "a"
+  }
+ ]
+}
